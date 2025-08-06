@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/Applicationform.css">
 </head>
 
 <body>
@@ -41,7 +42,70 @@
             <label for="female">หญิง</label><br>
 
             <input type="radio" id="other" name="gender" value="other">
-            <label for="other">อื่น ๆ</label><br>
+            <label for="other">อื่น ๆ</label><br><br>
+
+            <table>
+                <tr>
+                    <th>ระดับการศึกษา</th>
+                    <th>สถานศึกษา</th>
+                    <th>จังหวัด</th>
+                    <th>ปีที่เข้า</th>
+                    <th>ปีที่จบ</th>
+                    <th>วุฒิที่ได้รับ</th>
+                    <th>GPA</th>
+                </tr>
+                <tr>
+                    <td>ประถมศึกษา</td>
+                    <td><input type="text" name="primary_school"></td>
+                    <td><input type="text" name="primary_province"></td>
+                    <td><input type="text" name="primary_start"></td>
+                    <td><input type="text" name="primary_end"></td>
+                    <td><input type="text" name="primary_degree"></td>
+                    <td><input type="text" name="primary_gpa"></td>
+                </tr>
+                <tr>
+                    <td>มัธยมต้น</td>
+                    <td><input type="text" name="junior_school"></td>
+                    <td><input type="text" name="junior_province"></td>
+                    <td><input type="text" name="junior_start"></td>
+                    <td><input type="text" name="junior_end"></td>
+                    <td><input type="text" name="junior_degree"></td>
+                    <td><input type="text" name="junior_gpa"></td>
+                </tr>
+                <tr>
+                    <td>มัธยมปลาย/ปวช./ปวส.</td>
+                    <td><input type="text" name="senior_school"></td>
+                    <td><input type="text" name="senior_province"></td>
+                    <td><input type="text" name="senior_start"></td>
+                    <td><input type="text" name="senior_end"></td>
+                    <td><input type="text" name="senior_degree"></td>
+                    <td><input type="text" name="senior_gpa"></td>
+                </tr>
+            </table>
+
+            <ul>
+                <li>แบบไฟล์สำเนาบัตรประชาชน</li>
+                <input type="file" name="id_card"><br><br>
+
+                <li>แบบไฟล์วุฒิการศึกษา (เช่น ปพ.1)</li>
+                <input type="file" name="certificate"><br><br>
+
+                <li>สามารถอัปโหลดหลายไฟล์พร้อมกัน</li>
+                <input type="file" name="multi_files" multiple>
+            </ul>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    ข้าพเจ้ายอมรับเงื่อนไขและข้อตกลง
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+            
         </form>
     </div>
 </body>
