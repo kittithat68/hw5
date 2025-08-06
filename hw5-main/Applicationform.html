@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>แบบฟอร์มสมัครเรียน</h1>
+        <label for="prefix">คำนำหน้าชื่อ</label>
+        <select id="prefix" name="prefix" required>
+            <option value="">-- กรุณาเลือก --</option>
+            <option value="นาย">นาย</option>
+            <option value="นางสาว">นางสาว</option>
+            <option value="นาง">นาง</option>
+        </select>
+        <form>
+            <label for="fname">ชื่อ</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">นามสกุล</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="lname">เลขประจำตัวประชาชน</label><br>
+            <input type="text" id="lname" name="lname" maxlength="13"><br>
+
+            <label for="date">วันเดือนปีเกิด</label><br>
+            <input type="text" id="date" name="date"><br>
+
+            <label for="number">อายุ(ปี)</label><br>
+            <input type="text" id="number" name="number"><br>
+
+            <label>เพศ:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">ชาย</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">หญิง</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">อื่น ๆ</label><br>
+        </form>
+    </div>
+</body>
+
+</html>
